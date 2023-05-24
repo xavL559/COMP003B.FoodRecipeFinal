@@ -38,5 +38,12 @@ namespace COMP003B.FoodRecipeFinal
 
             app.Run();
         }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<WebDevAcademyContext>(
+                options => options.UseSqlServer(
+                    "<connection string>",
+                    providerOptions => providerOptions.EnableRetryOnFailure()));
+        }
     }
 }

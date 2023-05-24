@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace COMP003B.FoodRecipeFinal.Migrations
 {
     [DbContext(typeof(WebDevAcademyContext))]
-    [Migration("20230517124907_AddFoodIDToFoodRecipeViewModel")]
+    [Migration("20230524050434_AddFoodIDToFoodRecipeViewModel")]
     partial class AddFoodIDToFoodRecipeViewModel
     {
         /// <inheritdoc />
